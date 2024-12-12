@@ -35,10 +35,9 @@ export function Faqs() {
     <section className="px-8 py-20">
       <div className="container max-w-6xl mx-auto">
         <div className="text-center">
-          {/* Fixed the Typography tag by adding a simple class */}
-          <Typography variant="h1" color="blue-gray" className="mb-4">
+          <h1 className="text-4xl font-bold text-blue-gray mb-4">
             Frequently asked questions
-          </Typography>
+          </h1>
           <Typography
             variant="lead"
             className="mx-auto mb-24 !text-gray-500 lg:w-3/5"
@@ -52,14 +51,9 @@ export function Faqs() {
         <div className="grid gap-20 md:grid-cols-1 lg:grid-cols-3">
           {FAQS.map(({ title, desc }) => (
             <Card key={title} shadow={false} color="transparent">
-              {/* Ensured all required props are properly passed */}
-              <Typography color="blue-gray" className="pb-6" variant="h4">
-                {title}
-              </Typography>
+              <h4 className="text-xl text-blue-gray pb-6">{title}</h4>
               <div className="pt-2">
-                <Typography className="font-normal !text-gray-500">
-                  {desc}
-                </Typography>
+                <p className="font-normal text-gray-500">{desc}</p>
               </div>
             </Card>
           ))}
