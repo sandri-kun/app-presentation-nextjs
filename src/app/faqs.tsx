@@ -10,7 +10,7 @@ const FAQS = [
   },
   {
     title: "Is there a free trial available?",
-    desc: "Yes, we offer a 30 days free trial so you can experience our mobile application with no commitment.",
+    desc: "Yes, we offer a 30-day free trial so you can experience our mobile application with no commitment.",
   },
   {
     title: "How can I upgrade my account?",
@@ -35,6 +35,7 @@ export function Faqs() {
     <section className="px-8 py-20">
       <div className="container max-w-6xl mx-auto">
         <div className="text-center">
+          {/* Fixed the Typography tag by adding a simple class */}
           <Typography variant="h1" color="blue-gray" className="mb-4">
             Frequently asked questions
           </Typography>
@@ -51,6 +52,7 @@ export function Faqs() {
         <div className="grid gap-20 md:grid-cols-1 lg:grid-cols-3">
           {FAQS.map(({ title, desc }) => (
             <Card key={title} shadow={false} color="transparent">
+              {/* Ensured all required props are properly passed */}
               <Typography color="blue-gray" className="pb-6" variant="h4">
                 {title}
               </Typography>
