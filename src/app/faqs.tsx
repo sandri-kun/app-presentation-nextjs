@@ -33,33 +33,7 @@ const FAQS = [
 export function Faqs() {
   return (
     <section className="px-8 py-20">
-      <div className="container max-w-6xl mx-auto">
-        <div className="text-center">
-          {/* Ganti Typography h1 dengan elemen h1 HTML */}
-          <h1 className="text-4xl font-bold text-blue-gray mb-4">
-            Frequently asked questions
-          </h1>
-          {/* Ganti Typography untuk lead dengan elemen p HTML */}
-          <p className="mx-auto mb-24 text-gray-500 lg:w-3/5">
-            A lot of people don&apos;t appreciate the moment until it&apos;s
-            passed. I&apos;m not trying my hardest, and I&apos;m not trying to
-            do
-          </p>
-        </div>
-
-        <div className="grid gap-20 md:grid-cols-1 lg:grid-cols-3">
-          {FAQS.map(({ title, desc }) => (
-            <Card key={title} shadow={false} color="transparent">
-              {/* Ganti Typography h4 dengan elemen h4 HTML */}
-              <h4 className="text-xl text-blue-gray pb-6">{title}</h4>
-              <div className="pt-2">
-                {/* Ganti Typography dengan elemen p HTML */}
-                <p className="font-normal text-gray-500">{desc}</p>
-              </div>
-            </Card>
-          ))}
-        </div>
-      </div>
+      
     </section>
   );
 }
